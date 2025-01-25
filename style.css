@@ -1,0 +1,338 @@
+.d1{
+    background-color: black;
+    width: 1518px;
+    height: 11vh;
+    
+}
+
+.d2{
+    overflow-y: scroll;
+    
+}
+
+.b{
+    margin: 0px;
+    background-color: black;
+}
+
+.img1{
+    width: 160px;
+    margin-top: -15px;
+    margin-left: 20px;
+}
+.ol1{
+    list-style-type: none;
+    margin-top: -40px;
+    margin-left: 500px;
+}
+
+.li1{
+    display: inline;
+    font-family:'candara';
+    font-weight: 800;
+    color: rgb(255, 255, 255);
+    margin-left: 35px;
+    font-size: 14px;
+}
+
+.nav-link{
+    color: white;
+}
+.bg-body-tertiary{
+    background-color: black !important;
+}
+
+.navbar-nav{
+    margin-left: 300px;
+}
+
+.nav-item{
+    margin-left: 25px;
+    
+}
+
+
+.headline{
+    font-size: 90px;
+    font-family: 'Claire Vionce Demo';
+    margin-top: -200px;
+    text-shadow: 8px 8px 8px #000000;
+    text-align: center;
+    color: azure;
+}
+
+.headline2{
+    font-size: 50px;
+    font-family: 'Claire Vionce Demo';
+    
+    text-shadow: 3px 3px 3px  #000000;
+    text-align: center;
+    color: rgb(252, 254, 235);
+}
+
+.container{
+    
+    width: 100%;
+}
+
+.about{
+    margin-inline: 180px;
+    font-size: 20px;
+    margin-top: 100px;
+    text-align: justify;
+    
+}
+
+/* .homeimgs{
+    transform: scale(1.05);
+
+    transition: all 0.8s ease;
+} */
+
+.gallary{
+    display: inline;
+    width: 100px;
+}
+.homeimgs{
+    transform:scale(1);
+      transition:transform 0.3s ease-in;
+      filter:grayscale(10%);
+}
+&:hover {
+    .homeimgs {
+      transform:scale(0.95);
+      filter:grayscale(0%);
+    }
+}
+.thumbnail{
+    box-shadow:0 0 0 3px white, 0 5px 8px 3px;
+}
+.text-center{
+    
+    margin-bottom: 20px;
+}
+
+.btn.btn-dark {
+    border-radius: 5ch;
+    border-width: 1.5ch;
+    width:15%
+}
+
+.btn.btn-light{
+    border-radius: 5ch;
+    border-width: 1ch;
+    font-weight: 700;
+    width: 15%;
+}
+
+
+.instagram-icon{
+    width: 15px;
+    margin:5px ;
+    border-radius: 50%;
+
+}
+
+@import url('https://fonts.googleapis.com/css?family=Rubik&display=swap');
+
+
+
+
+.color-text{
+    color:#757575 !important;
+}
+
+footer{
+    color:#caced1 !important;
+ }
+ 
+ 
+
+.row-1{
+    background-color:#000000 !important;
+}
+
+.row-2{
+    
+    background-color: #292929 !important;
+}
+
+   .list-unstyled{
+    margin-left: 80px;
+   }
+
+.mt-0{
+    margin-bottom: 20px;
+}
+
+.bg-image{
+    width: 100%;
+    margin-top: -20px;
+    
+}
+
+.stylists-name{
+    font-family: 'Gendisa Demo';
+}
+
+.service{
+    text-align: justify;
+}
+
+/* login */
+.body-login{
+    background-image:url('login.jpg');
+    background-position:center;
+    background-size:cover;
+    -webkit-font-smoothing: antialiased;
+    
+    
+}
+::placeholder { 
+    color: #ffffff!important;   
+    font-size:18px!important;
+}
+.form-login {
+    background-color: rgba(0,0,0,0.55);
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border-radius: 15px;
+    border-color:#d2d2d2;
+    border-width: 5px;
+    color:white;
+    box-shadow:0 1px 0 #cfcfcf;
+}
+.form-control{
+    background:transparent!important;
+    color:white!important;
+    font-size: 18px!important;
+    border-radius: 10px;
+}
+
+.login{
+    border:0 solid #fff; 
+    border-bottom-width:1px;
+    padding-bottom:10px;
+    text-align: center;
+}
+
+.text-white{
+    color: rgb(250, 244, 244)!important;
+    font-family: 'Claire Vionce Demo';
+    font-size: 40px;
+    text-shadow: 5px 3px 4px  #000000;
+
+}
+.wrapper {
+    text-align: center;
+}
+
+.form-control.input-sm.chat-input{
+    border-radius: 6ch;
+}
+.btn.btn-danger.btn-md{
+    border-radius: 5ch;
+    width: 100%;
+}
+
+/* register */
+.form-content
+{
+    padding: 5%;
+   
+    margin-bottom: 2%;
+}
+.body-register{
+    background-image:url('register.jpg');
+    background-position:center;
+    background-size:cover;
+    -webkit-font-smoothing: antialiased;
+} 
+.btnSubmit
+{
+    border:none;
+    border-radius:5ch;
+    padding: 1%;
+    width: 20%;
+    cursor: pointer;
+    background: #361e0e;
+    color: #fff;
+}
+
+.contact{
+    margin-left: 60ch;
+    margin-top: 50ch;
+    margin-right: 60ch;
+    margin-bottom: 20ch;
+    
+}
+
+/* Booking */
+.body-booking{
+    background-image:url('booking.jpg');
+    background-position:center;
+    background-size:cover;
+    -webkit-font-smoothing: antialiased;
+    
+    
+}
+
+.form-select.mt-3{
+    background-color: #00000000;
+    color: #020202;
+    font-size: 18px;
+    border-radius: 5ch;
+}
+
+/* frogot password */
+
+.popup{
+    background: #272626c2;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+
+.popup-content{
+    height: 250px;
+    width: 500px;
+    background: #ccbcb1;
+    padding: 20px;
+    border-radius: 5px;
+    position: relative;align-items: center;
+}
+
+.frogot{
+    font-family: 'candara'; 
+    color: rgb(158, 96, 89);
+    font-weight: 1000;
+    text-align: center;
+}
+
+
+
+.frogot-form{
+    text-align: center;
+    
+}
+
+.frogot-clik{
+    color: rgb(255, 255, 255); margin-left: 130px;
+    cursor: pointer;
+}
+
+.closebtn{
+    width: 20px;
+    right: -15px;
+    top:-15px;
+    position: absolute;
+    /* box-shadow: 6px 50px 29px -10px rgba(0, 0, 0, 0.608); */
+    cursor: pointer;
+}
