@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width, initial-scale=1.0">
+    <title>Contact- Olivea Salon</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="icon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+</head>
+<body style="background-color: rgb(228, 229, 230);">
+    <!--nav bar-->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important;"  data-bs-theme="dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="Olivea logo.png" class="img1">
+        </a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNavDropdown">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="Home.html">HOME</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Stylists.html">STYLISTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Services.html">SERVICES</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Products.html">PRODUCTS</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="bookAppoinment.html">BOOK APOINTMENT</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="Contact.html">CONTACT</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!--nav bar end-->
+
+      <!--headline-->
+      <div class="bg-image" >
+        <img src="contact.jpg" class="w-100" />
+            <div  style="background-color: rgba(10, 10, 10, 0.589)">
+            <h1 class="headline" style="font-size: 120px; margin-top: -400px;">CONTACT</h1>
+            </div>
+      </div>
+      <div class="contact">
+        <h3>SALON ADDRESS</h3>
+        <p>20 Newbury Street, 4th Floor <br>Boston, MA 02116</p>
+
+        <h3 style="margin-top: 50px;">APPOINTMENTS</h3>
+        <p>Phone: (617) 267-4027</p>
+        <p>Email: oliveasalonboston@gmail.com</p>
+
+        <p><a href="bookAppoinment.html" class="link-underline-dark" style="color: rgb(220, 106, 61);">Book Onine</a></p>
+        <h3 style="margin-top: 50px;">SALON HOURS</h3>
+        <p>Sunday: 10am-6pm</p>
+        <p>Monday: 10am-7pm</p>
+        <p>Tuesday-Thursday: 9am-8pm</p>
+        <p>Friday: 9am-7pm</p>
+        <p>Saturday: 9am-5pm</p>
+
+        <h3 style="margin-top: 50px;">OUR POLICIES</h3>
+        <p>All clients: Kindly provide 24 hours notice if you need to reschedule or cancel an appointment. Changes made within the 24-hour window will be charged 50% of the service fee. No-shows will be charged in full.</p>
+        <h3 style="margin-top: 50px;">BOOKING</h3>
+        <p>Online booking is open to current clients. First-time clients are encouraged to create a profile to book online. You would need to follow up with a phone call to complete the booking process, as we conduct a brief questionnaire and take the credit card information to secure the appointment. (credit card information is not kept on file after the initial appointment)</p>
+        <h3 style="margin-top: 50px;">APPOINTMENTS</h3>
+        <p>At this time, we are by appointment only.  Please arrive early for your appointment if possible. While we try to accommodate late clients, please keep in mind your appointment cannot be guaranteed if you are running more than 15 minutes behind. We require a credit card to hold an appointment so we can uphold our no-show & cancellation/ reschedule policy.</p>
+        <h3 style="margin-top: 50px;">CHILDREN’S POLICY</h3>
+        <p>At Olivea Salon, we aim to offer its clients a relaxing, complete salon experience. The salon can be an extremely lively active place with many people and equipment in motion.
+
+            Children under 10 are strongly encouraged not to visit the salon.</p>
+    
+    </div>
+    <!--Contact Form-->
+    <div class="container mt-5">
+        <h3>Contact Us</h3>
+        <form>
+            <div class="mb-3">
+                <label for="name" class="form-label">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Your Name">
+            </div>
+            <div class="mb-3">
+                <label for="email" class="form-label">Email address</label>
+                <input type="email" class="form-control" id="email" placeholder="name@example.com">
+            </div>
+            <div class="mb-3">
+                <label for="message" class="form-label">Message</label>
+                <textarea class="form-control" id="message" rows="3" placeholder="Your Message"></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary">Submit</button>
+        </form>
+    </div>
+    <!--Footer-->
+    <div class="container-fluid pb-0 mb-0 justify-content-center text-light ">
+      <footer >
+        <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
+            <div class="col-12">
+                 <div class="row row-2">
+                     <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><h2><span> <i class="fa fa-firefox text-light" aria-hidden="true"></i></span><b>  OLIVEA</b></h2></div>
+                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>LOCATION</b></li><li class="mt-0"><img src="placeholder.png" width="25">20 Newbury Street, 4th Floor
+                      Boston</li><li class="mt-0"><img src="phone-call.png" width="18">  (617) 267-4027</li><li class="mt-0"><img src="mail (1).png" width="20"> oliveasalonboston@gmail.com</li></ul></div>
+                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>HOURS</b></li><li>Sunday: 10am-6pm</li><li>Monday: 10am-7pm</li><li>Tuesday-Thursday: 9am-8pm</li><li>Friday: 9am-7pm</li><li>Saturday: 9am-5pm</li></ul></div>
+
+                 </div>  
+            </div>
+        </div>
+        <div class="row justify-content-center mt-0 pt-0 row-1 mb-0  px-sm-3 px-2">
+             <div class="col-12">
+                 <div class="row my-4 row-1 no-gutters">
+                     <div class="col-sm-3 col-auto text-left" style="font-size: 12px;"><small>©2024 Olivea Salon Boston. All rights reserved. Website built by Stranded.</small></div>
+                     <div class="col  my-auto text-md-left  text-right " style="margin-right: 5vw;"> 
+                      <small>
+                         <span>
+                        <img src="instagram.png" class="img-fluid "  width="30" style="margin-right: 10px;">
+                        </span> 
+                        <span>
+                          <img src="fb2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
+                        </span>
+                        <span>
+                          <img src="twitter2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
+                        </span>
+                        <span>
+                          <img src="wp.png" class="img-fluid "  width="30">
+                        </span>
+                      </small>  </div> 
+                 </div>
+             </div>
+         </div>
+     </footer>
+    </div>
+</body>
+</html>

@@ -5,18 +5,19 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Stylists -Olivea Salon </title>
     <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="icon.png">
+    <link rel="icon" href="Images/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body style="background-color: rgb(228, 229, 230);">
+  <script src="script.js"></script>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important;"  data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="Olivea logo.png" class="img1">
+          <a class="navbar-brand" href="Home.html">
+            <img src="Images/Olivea logo.png" class="img1">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
@@ -59,12 +60,16 @@
 
       <!--headline-->
       <div class="bg-image" >
-        <img src="stylists.jpg" class="w-100" />
+        <img src="Images/stylists.jpg" class="w-100"  />
             <div  style="background-color: rgba(10, 10, 10, 0.589)">
-            <h1 class="headline" style="font-size: 120px;">STYLISTS</h1>
+            <h1 class="headline" >STYLISTS</h1>
             </div>
       </div>
+      <!--Scroll arrow-->
       
+      <div id="progress" >
+        <span id="progress-value">&#x1F815;</span>
+      </div>
       <!--team list 1-->
       <div class="container" style="margin-top: 120px; margin-bottom: 30px;">
         
@@ -72,7 +77,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
              
-                <img class="homeimgs" src="Lindsay_McEvoy.webp" style="width:100%">
+                <img class="homeimgs" src="Images/Lindsay_McEvoy.webp" style="width:100%">
                 <div class="caption">
                   <h3 class="stylists-name">Lindsay Toutain</h3>
                   <p>Stylist & Colorist</p>
@@ -83,7 +88,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
               
-                <img class="homeimgs" src="Ethan.webp" style="width:100%">
+                <img class="homeimgs" src="Images/Ethan.webp" style="width:100%">
                 <div class="caption">
                     <h3 class="stylists-name">Ethan Silver</h3>
 
@@ -95,7 +100,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
               
-                <img class="homeimgs" src="Jae.webp" alt="Fjords" style="width:100%">
+                <img class="homeimgs" src="Images/Jae.webp" alt="Fjords" style="width:100%">
                 <div class="caption">
                     <h3 class="stylists-name">J Correa</h3>
 
@@ -116,7 +121,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
              
-                <img class="homeimgs" src="Ryan.webp" style="width:100%">
+                <img class="homeimgs" src="Images/Ryan.webp" style="width:100%">
                 <div class="caption">
                   <h3 class="stylists-name">Ryan O Sullivan</h3>
                   <p>Owner</p>
@@ -127,7 +132,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
               
-                <img class="homeimgs" src="Hannah.webp" style="width:100%">
+                <img class="homeimgs" src="Images/Hannah.webp" style="width:100%">
                 <div class="caption">
                     <h3 class="stylists-name">Hannah Brown</h3>
 
@@ -139,7 +144,7 @@
           <div class="col-md-4">
             <div class="thumbnail">
               
-                <img class="homeimgs" src="Molly.webp" alt="Fjords" style="width:100%">
+                <img class="homeimgs" src="Images/Molly.webp" alt="Fjords" style="width:100%">
                 <div class="caption">
                     <h3 class="stylists-name">Molly Tapper</h3>
 
@@ -158,13 +163,13 @@
       <footer >
         <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
             <div class="col-12">
-                 <div class="row row-2">
-                     <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><h2><span> <i class="fa fa-firefox text-light" aria-hidden="true"></i></span><b>  OLIVEA</b></h2></div>
-                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>LOCATION</b></li><li class="mt-0"><img src="placeholder.png" width="25">20 Newbury Street, 4th Floor
-                      Boston</li><li class="mt-0"><img src="phone-call.png" width="18">  (617) 267-4027</li><li class="mt-0"><img src="mail (1).png" width="20"> oliveasalonboston@gmail.com</li></ul></div>
-                     <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>HOURS</b></li><li>Sunday: 10am-6pm</li><li>Monday: 10am-7pm</li><li>Tuesday-Thursday: 9am-8pm</li><li>Friday: 9am-7pm</li><li>Saturday: 9am-5pm</li></ul></div>
+              <div class="row row-2">
+                <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><a href="Home.html" style="color: aliceblue;"><h2><b>  OLIVEA</b></h2></a></div>
+                <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>LOCATION</b></li><li class="mt-0"><img src="Images/placeholder.png" width="25">20 Newbury Street, 4th Floor
+                 Boston</li><li class="mt-0"><img src="Images/phone-call.png" width="18">  (617) 267-4027</li><li class="mt-0"><img src="Images/mail (1).png" width="20"> oliveasalonboston@gmail.com</li></ul></div>
+                <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>HOURS</b></li><li>Sunday: 10am-6pm</li><li>Monday: 10am-7pm</li><li>Tuesday-Thursday: 9am-8pm</li><li>Friday: 9am-7pm</li><li>Saturday: 9am-5pm</li></ul></div>
 
-                 </div>  
+            </div>   
             </div>
         </div>
         <div class="row justify-content-center mt-0 pt-0 row-1 mb-0  px-sm-3 px-2">
@@ -173,26 +178,26 @@
                      <div class="col-sm-3 col-auto text-left" style="font-size: 12px;"><small>©2024 Olivea Salon Boston. All rights reserved. Website built by Stranded.</small></div>
                      <div class="col  my-auto text-md-left  text-right " style="margin-right: 5vw;"> 
                       <small>
-                         <span>
-                        <a href="https://www.instagram.com/udari__kalpana/profilecard/?igsh=MWVoZ2t6MnM4ZWpkdw==">
-                        <img src="instagram.png" class="img-fluid "  width="30" style="margin-right: 10px;">
-                        </a>
-                        </span> 
                         <span>
-                        <a href="https://www.facebook.com/profile.php?id=100010838733394">
-                          <img src="fb2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
-                        </a>
-                        </span>
-                        <span>
-                          <a href="https://www.facebook.com/profile.php?id=100010838733394">
-                          <img src="twitter2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
-                        </a>
-                        </span>
-                        <span>
-                          <a href="https://youtube.com/@starlight_melodies?si=5R0pDA14iy1JD0PS">
-                          <img src="youtube.png" class="img-fluid "  width="30">
+                          <a href="https://www.instagram.com/udari__kalpana/profilecard/?igsh=MWVoZ2t6MnM4ZWpkdw==">
+                          <img src="Images/instagram.png" class="img-fluid "  width="30" style="margin-right: 10px;">
                           </a>
-                        </span>
+                          </span> 
+                          <span>
+                          <a href="https://www.facebook.com/profile.php?id=100010838733394">
+                            <img src="Images/fb2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
+                          </a>
+                          </span>
+                          <span>
+                            <a href="https://www.facebook.com/profile.php?id=100010838733394">
+                            <img src="Images/twitter2.png" class="img-fluid "  width="30" style="margin-right: 10px;">
+                          </a>
+                          </span>
+                          <span>
+                            <a href="https://youtube.com/@starlight_melodies?si=5R0pDA14iy1JD0PS">
+                            <img src="Images/youtube.png" class="img-fluid "  width="30">
+                            </a>
+                          </span>
                       </small>  </div> 
                  </div>
              </div>
