@@ -1,3 +1,5 @@
+
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -12,10 +14,11 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body class="body-login">
+  <script src="script.js"></script>
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important;"  data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html">
+          <a class="navbar-brand" href="index.php">
             <img src="Images/Olivea logo.png" class="img1">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -24,13 +27,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Home.html">HOME</a>
+                <a class="nav-link" aria-current="page" href="index.php">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Stylists.html">STYLISTS</a>
+                <a class="nav-link" href="Stylists.php">STYLISTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Services.html">SERVICES</a>
+                <a class="nav-link" href="Services.php">SERVICES</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -43,13 +46,13 @@
                 </ul>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="Products.html">PRODUCTS</a>
+                <a class="nav-link" href="Products.php">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="bookAppoinment.html">BOOK APOINTMENT</a>
+                <a class="nav-link active" href="Booking.php">BOOK APOINTMENT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Contact.html">CONTACT</a>
+                <a class="nav-link" href="Contact.php">CONTACT</a>
               </li>
             </ul>
           </div>
@@ -64,7 +67,7 @@
             <div class="col-md-offset-5 col-md-4 text-center">
                 <h2 class='text-white'>WELCOME</h2>
                   <div class="form-login"></br>
-                    <form action="Register.php" method="post">
+                    <form action="login_action.php" method="post">
                     <h4 class="login">Login to your account</h4>
                     </br>
                     <div class="input-group mb-3">
@@ -72,7 +75,7 @@
                         <span class="input-group-text" style="background-color: rgba(0, 0, 0, 0); border: 0;">
                         <img src="Images/user.png" style="width: 30px; margin-right: 5px;">
                         
-                        <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" name="username" value="" required/>
+                        <input type="text" id="userName" class="form-control input-sm chat-input" placeholder="username" name="username"  required/>
                       </span>
                       </div>
                     </div>
@@ -82,7 +85,7 @@
                         <span class="input-group-text" style="background-color: rgba(0, 0, 0, 0); border: 0;">
                         <img src="Images/door-key2.png" style="width: 30px; margin-right: 5px;">
                         
-                        <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" name="password" value="" required/>
+                        <input type="password" id="userPassword" class="form-control input-sm chat-input" placeholder="password" name="password"  required/>
                       </span>
                       </div>
                     </div>
@@ -93,7 +96,7 @@
                                 <button type="submit" class="btn btn-danger btn-md">Login</button>
                             </span>
                     </div>
-                    <h5 >Don't have an account? <a href="Register.html"
+                    <h5 >Don't have an account? <a href="Register.php"
                         class="link-danger">Register</a></h5>
                     </form>
                 </div>
@@ -108,10 +111,10 @@
       <div class="popup-content">
         <img src="Images/close.png" class="closebtn">
         <h2 class="frogot" >Frogot Your Password?</h2>
-        <p style="text-align: center; margin-top: 3ch; color: azure;">To reset your password, enter the email address you use to sign in</p>
-        <form action="" method="post" class="frogot-form">
+        <p style="text-align: center; margin-top: 3ch; color: azure;">To reset your password, enter the email address associated with your account.</p>
+        <form action="" method="post" class="frogot-form" onsubmit="event.preventDefault(); sendResetEmail();">
           <input type="email" id="email" class="form-control" style="border-radius: 5ch; border-color: aliceblue;" placeholder="email" name="email" value="" required/>
-          <button type="submit" class="btn btn-danger btn-md" style="background-color: rgb(112, 79, 72); margin-top: 15px; box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.471); border: 0cap;">Send Email</button>
+          <button type="submit"onclick="sendResetEmail()"  class="btn btn-danger btn-md" style="background-color: rgb(112, 79, 72); margin-top: 15px; box-shadow: 4px 6px 5px rgba(0, 0, 0, 0.471); border: 0cap;" >Send Email</button>
 
 
         </form>
@@ -136,7 +139,7 @@
     <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
         <div class="col-12">
              <div class="row row-2">
-              <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><a href="Home.html" style="color: aliceblue;"><h2><b>  OLIVEA</b></h2></a></div>
+              <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><a href="index.php" style="color: aliceblue;"><h2><b>  OLIVEA</b></h2></a></div>
               <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>LOCATION</b></li><li class="mt-0"><img src="Images/placeholder.png" width="25">20 Newbury Street, 4th Floor
                     Boston</li><li class="mt-0"><img src="Images/phone-call.png" width="18">  (617) 267-4027</li><li class="mt-0"><img src="Images/mail (1).png" width="20"> oliveasalonboston@gmail.com</li></ul></div>
                    <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>HOURS</b></li><li>Sunday: 10am-6pm</li><li>Monday: 10am-7pm</li><li>Tuesday-Thursday: 9am-8pm</li><li>Friday: 9am-7pm</li><li>Saturday: 9am-5pm</li></ul></div>

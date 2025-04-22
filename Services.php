@@ -1,3 +1,11 @@
+<?php
+  session_start();
+  if (isset($_SESSION['username'])) {
+    $username = $_SESSION['username'];
+  } else {
+    $username = null;
+  }
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -16,7 +24,7 @@
     <!--nav bar-->
     <nav class="navbar navbar-expand-lg bg-body-tertiary" style="background-color: black !important;"  data-bs-theme="dark">
         <div class="container-fluid">
-          <a class="navbar-brand" href="Home.html">
+          <a class="navbar-brand" href="index.php">
             <img src="Images/Olivea logo.png" class="img1">
         </a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
@@ -25,13 +33,13 @@
           <div class="collapse navbar-collapse" id="navbarNavDropdown">
             <ul class="navbar-nav">
               <li class="nav-item">
-                <a class="nav-link" aria-current="page" href="Home.html">HOME</a>
+                <a class="nav-link" aria-current="page" href="index.php">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Stylists.html">STYLISTS</a>
+                <a class="nav-link" href="Stylists.php">STYLISTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="Services.html">SERVICES</a>
+                <a class="nav-link" href="Services.php">SERVICES</a>
               </li>
               <!-- <li class="nav-item dropdown">
                 <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -44,16 +52,86 @@
                 </ul>
               </li> -->
               <li class="nav-item">
-                <a class="nav-link" href="Products.html">PRODUCTS</a>
+                <a class="nav-link" href="Products.php">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="bookAppoinment.html">BOOK APOINTMENT</a>
+                <a class="nav-link active" href="Booking.php">BOOK APOINTMENT</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Contact.html">CONTACT</a>
+                <a class="nav-link" href="Contact.php">CONTACT</a>
               </li>
             </ul>
           </div>
+          <?php if ($username): ?>
+  <style>
+    .welcome-msg {
+      background: linear-gradient(135deg, rgba(255, 105, 180, 0.8), rgba(205, 0, 78, 0.8));
+      border: 2px solid rgb(205, 0, 78);
+      padding: 8px 20px;
+      border-radius: 50px;
+      color: white;
+      font-weight: 600;
+      font-family: 'Segoe UI', sans-serif;
+      font-size: 18px;
+      box-shadow: 0 4px 15px rgba(205, 0, 78, 0.4);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 12px;
+      animation: fadeSlide 1s ease-in-out;
+      transition: all 0.3s ease-in-out;
+      max-width: 250px;
+    }
+
+    .welcome-msg:hover {
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(205, 0, 78, 0.5);
+    }
+
+    .welcome-msg .icon {
+      width: 25px;
+      height: 25px;
+      background: url('path_to_welcome_icon.png') no-repeat center center;
+      background-size: contain;
+    }
+
+    @keyframes fadeSlide {
+      0% {
+        opacity: 0;
+        transform: translateY(-10px);
+      }
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+  </style>
+
+  <div style="display: flex; align-items: center; gap: 15px; margin-right: 30px;">
+    <div class="welcome-msg">
+      <span class="icon"></span>
+      <span>Welcome, <strong><?php echo htmlspecialchars($username); ?></strong></span>
+    </div>
+    <a href="logout.php">
+      <button type="button" class="btn btn-light" style="width: 100px;">Logout</button>
+    </a>
+  </div>
+<?php else: ?>
+  <a href="login.php">
+    <button type="button" class="btn btn-light" style="width: 100px; margin-right: 30px;">Login</button>
+  </a>
+<?php endif; ?>
+
+
+          <script>
+          if (<?php echo json_encode($username); ?>) {
+            document.getElementById("login-btn").innerHTML = "Logout";
+            
+          } else {
+            document.getElementById("login-btn").innerHTML = "Login";
+           
+          }
+          </script>
         </div>
       </nav>
       <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
@@ -171,7 +249,7 @@
         <div class="row justify-content-center mb-0 pt-5 pb-0 row-2 px-3">
             <div class="col-12">
                  <div class="row row-2">
-                  <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><a href="Home.html" style="color: aliceblue;"><h2><b>  OLIVEA</b></h2></a></div>
+                  <div class="col-sm-3 text-md-center" style="font-family: Claire Vionce Demo;"><a href="index.php" style="color: aliceblue;"><h2><b>  OLIVEA</b></h2></a></div>
                   <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>LOCATION</b></li><li class="mt-0"><img src="Images/placeholder.png" width="25">20 Newbury Street, 4th Floor
                         Boston</li><li class="mt-0"><img src="Images/phone-call.png" width="18">  (617) 267-4027</li><li class="mt-0"><img src="Images/mail (1).png" width="20"> oliveasalonboston@gmail.com</li></ul></div>
                        <div class="col-sm-3  my-sm-0 mt-5"><ul class="list-unstyled"><li class="mt-0"><b>HOURS</b></li><li>Sunday: 10am-6pm</li><li>Monday: 10am-7pm</li><li>Tuesday-Thursday: 9am-8pm</li><li>Friday: 9am-7pm</li><li>Saturday: 9am-5pm</li></ul></div>

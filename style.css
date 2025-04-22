@@ -99,7 +99,17 @@ html{
     display: inline;
     width: 100px;
 }
-.homeimgs{
+.imgstyle img {
+    transition: transform 0.4s ease-in-out;
+    border-radius: 10px;
+  }
+  
+  .imgstyle img:hover {
+    transform: scale(1.05);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+/* .homeimgs{
     transform:scale(1);
       transition:transform 0.3s ease-in;
       filter:grayscale(10%);
@@ -109,7 +119,7 @@ html{
       transform:scale(0.95);
       filter:grayscale(0%);
     }
-}
+} */
 .thumbnail{
     box-shadow:0 0 0 3px white, 0 5px 8px 3px;
 }
@@ -369,6 +379,7 @@ footer{
 .frogot-clik{
     color: rgb(255, 255, 255); margin-left: 130px;
     cursor: pointer;
+    
 }
 
 .closebtn{

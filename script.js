@@ -40,3 +40,23 @@ var hs =new HorizontalScroll.default({
     isAnimated: true,
     springEfect: 0.8,
 });
+
+//frogot password
+function sendResetEmail() {
+    const email = document.getElementById("email").value;
+
+    if (!email) {
+        alert("Please enter your email.");
+        return;
+    }
+
+    
+    if (!email.includes("@")) {
+        alert("Please enter a valid email address.");
+        return;
+    }
+
+    
+    alert(`A password reset link has been sent to ${email}.`);
+    document.querySelector(".popup").style.display = "none";
+}
