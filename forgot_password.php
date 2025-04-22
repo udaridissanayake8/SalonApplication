@@ -5,15 +5,7 @@ use PHPMailer\PHPMailer\Exception;
 require 'vendor/autoload.php'; // Make sure Composer installed PHPMailer
 
 // DB connection
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'oliveadb';
-
-$conn = new mysqli($host, $username, $password, $database);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'Includes/db.php';
 
 // Form submitted
 if ($_SERVER["REQUEST_METHOD"] == "POST") {

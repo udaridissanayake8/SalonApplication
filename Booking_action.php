@@ -23,16 +23,7 @@
     $service=substr($service,0,-1);
     $service=trim($service);
 
-    $host='localhost';
-    $username='root';
-    $password='';
-    $database='oliveadb';
-
-    $conn=new mysqli ($host,$username,$password,$database);
-
-    if($conn->connect_error){
-        die("connection failed".$conn->connect_error);
-    }
+    include 'Includes/db.php';
 
     $sql="INSERT INTO Bookings(UserName,Guest_Information,Service,Employee,Time,Date,Note) 
     Values('$UserName','$Guest','$service','$Employee','$time','$date','$note')";

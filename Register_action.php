@@ -12,16 +12,7 @@ $Birthday=$_POST['Birthday'];
 $contact=$_POST['contact'];
 $marketing=$_POST['marketing'];
 
-$host='localhost';
-$username='root';
-$password='';
-$database='oliveadb';
-
-$conn=new mysqli ($host,$username,$password,$database);
-
-if($conn->connect_error){
-    die("connection failed".$conn->connect_error);
-}
+include 'Includes/db.php';
 
 $sql="INSERT INTO users(Username,Password,ConfirmPassword,Email,FirstName,LastName,MobilePhone,HomePhone,Gender,BirthDay,Contact,Marketing) 
 Values('$userName','$passwd','$confPassword','$email','$FirstName','$lname','$Phone','$HomePhone','$gender','$Birthday','$contact','$marketing')";

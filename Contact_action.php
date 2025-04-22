@@ -3,15 +3,7 @@ $name = $_POST['name'];
 $email = $_POST['email'];
 $message = $_POST['message'];
 
-$host = 'localhost';
-$username = 'root';
-$password = '';
-$database = 'oliveadb';
-
-$conn = new mysqli($host, $username, $password, $database);
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error);
-}
+include 'Includes/db.php';
 
 $stmt = $conn->prepare("INSERT INTO Contact(Name, Email, Message) VALUES (?, ?, ?)");
 $stmt->bind_param("sss", $name, $email, $message);
