@@ -42,7 +42,7 @@ CREATE TABLE `bookings` (
 --
 
 INSERT INTO `bookings` (`UserName`, `Guest_Information`, `Service`, `Employee`, `Time`, `Date`, `Note`) VALUES
-('cutesigma', 'Me +1 Guest', 'Hair cut', 'Ethan Silver', '10:55:00', '2025-04-26', 'bla bla bla bla bla 😑😑'),
+('cutesigma', 'Me +1 Guest', 'Hair cut', 'Ethan Silver', '10:55:00', '2025-04-26', '.....'),
 ('Kalpana', 'Me +1 Guest', 'Color,Eyebrow shaping', 'Ethan Silver', '11:46:00', '2025-04-21', '..'),
 ('Malsha', 'Me +1 Guest', 'Color,Styling', 'Lindsay Toutain', '11:45:00', '2025-04-15', ''),
 ('Udari', 'Me +1 Guest', 'Color,Eyebrow shaping', 'Ryan O Sullivan', '11:30:00', '2025-04-19', '..........'),
