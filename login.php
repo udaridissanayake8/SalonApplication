@@ -49,7 +49,7 @@
                 <a class="nav-link" href="Products.php">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="Booking.php">BOOK APOINTMENT</a>
+                <a class="nav-link" href="Booking.php">BOOK APOINTMENT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Contact.php">CONTACT</a>

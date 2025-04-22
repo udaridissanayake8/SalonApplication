@@ -37,7 +37,7 @@
                 <a class="nav-link" aria-current="page" href="index.php">HOME</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="Stylists.php">STYLISTS</a>
+                <a class="nav-link active" href="Stylists.php">STYLISTS</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Services.php">SERVICES</a>
@@ -56,7 +56,7 @@
                 <a class="nav-link" href="Products.php">PRODUCTS</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link active" href="Booking.php">BOOK APOINTMENT</a>
+                <a class="nav-link" href="Booking.php">BOOK APOINTMENT</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="Contact.php">CONTACT</a>
