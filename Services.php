@@ -13,11 +13,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Services -Olivea Salon </title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style2.css">
     <link rel="icon" href="Images/icon.png">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+   
 </head>
 <body style="background-color: rgb(228, 229, 230);">
   <script src="script.js"></script>
@@ -157,7 +160,10 @@
           <div class="col-md-4">
             <div class="thumbnail">
              
-                <img class="homeimgs" src="Images/Master_Coloring_Avanti.webp" style="width:100%">
+                <div class="image-hover-container">
+                    <img src="Images/color2.jpg" class="default-img"  style="width:100%"/>
+                    <img src="Images/color.jpg" class="hover-img" style="width:100%; height:100%;"/>
+                </div>
                 <div class="caption">
                   <h3 class="stylists-name">Master Coloring</h3>
                   <p>$85 – $350</p>
@@ -169,8 +175,10 @@
           <div class="col-md-4">
             <div class="thumbnail">
               
-                <img class="homeimgs" src="Images/Precision_Haircutting.jpg" style="width:100%">
-                <div class="caption">
+            <div class="image-hover-container">
+                    <img src="Images/hair cut.jpg" class="default-img"  style="width:100%"/>
+                    <img src="Images/haircut2.jpeg" class="hover-img" style="width:100%; height:100%;"/>
+                </div>                <div class="caption">
                     <h3 class="stylists-name">Precision Haircutting</h3>
 
                   <p>$90 – $175</p>
@@ -181,8 +189,10 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              
-                <img class="homeimgs" src="Images/Luxe_Products_Avanti_Boston.webp" alt="Fjords" style="width:100%">
+            <div class="image-hover-container">
+                    <img src="Images/Luxe_Products_Avanti_Boston.webp" class="default-img"  style="width:100%"/>
+                    <img src="Images/hair care.jpg" class="hover-img" style="width:100%; height:100%;"/>
+                </div>
                 <div class="caption">
                     <h3 class="stylists-name">Luxe Hair Essentials</h3>
 
@@ -199,7 +209,10 @@
           <div class="col-md-4">
             <div class="thumbnail">
              
-                <img class="homeimgs" src="Images/Bridal_hair_makeup.jpg" style="width:100%">
+            <div class="image-hover-container">
+                    <img src="Images/bride2.jpg" class="default-img"  style="width:100%"/>
+                    <img src="Images/bride1.jpg" class="hover-img" style="width:100%; height:100%;"/>
+                </div>                
                 <div class="caption">
                   <h3 class="stylists-name">Bridal Hair and Makeup</h3>
                   <p class="service" style="margin-bottom: 30px;">Our bridal hair and makeup services are designed to make your special day even more radiant, with looks crafted to reflect your style and natural beauty. From timeless elegance to modern chic, we offer personalized, detailed styling and flawless makeup applications that last through every smile and celebration. Let our team ensure you feel as beautiful and confident as you deserve on your wedding day.  </p>
@@ -209,8 +222,10 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              
-                <img class="homeimgs" src="Images/Hair_extensions.jpg" style="width:100%">
+            <div class="image-hover-container">
+                    <img src="Images/staight.jpeg" class="default-img"  style="width:100%"/>
+                    <img src="Images/Hair_extensions.jpg" class="hover-img" style="width:100%; height:100%;"/>
+                </div>  
                 <div class="caption">
                     <h3 class="stylists-name">Hair Straightening Services</h3>
 
@@ -221,8 +236,10 @@
           </div>
           <div class="col-md-4">
             <div class="thumbnail">
-              
-                <img class="homeimgs" src="Images/long_curly_hair.jpg" alt="Fjords" style="width:100%">
+            <div class="image-hover-container">
+                    <img src="Images/extention1.jpg" class="default-img" style="width:100%; height:100%;"/>
+                    <img src="Images/long_curly_hair.jpg" class="hover-img"  style="width:100%"/>
+                </div>  
                 <div class="caption">
                     <h3 class="stylists-name">Hair Extensions</h3>
                     <p class="service">Our hair extension services bring volume, length, and texture to your hair, carefully matched to blend seamlessly and look entirely natural. Whether you’re looking to add subtle fullness or dramatic length, we provide customized extension solutions that complement your individual style. Each application is handled with expert care to ensure comfortable, beautiful results that flow and move just like your own hair.</p>
@@ -238,7 +255,7 @@
         <div style="margin-top: -300px;">
         <h1 class="headline2">Schedule a Complimentary Consultation</h1>
         <div class="text-center" style="margin-bottom: 15vh; margin-top: 5vh;" >
-          <a href="bookAppoinment.html"><button type="button" class="btn btn-light" style="box-shadow: 5px 5px 5px;">BOOK NOW</button></a>
+          <a href="Booking.php"><button type="button" class="btn btn-light" style="box-shadow: 5px 5px 5px;">BOOK NOW</button></a>
           </div>
         </div>
       </figure>

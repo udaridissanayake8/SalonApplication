@@ -120,9 +120,44 @@ html{
       filter:grayscale(0%);
     }
 } */
+
 .thumbnail{
     box-shadow:0 0 0 3px white, 0 5px 8px 3px;
 }
+
+.image-hover-container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+  }
+  
+  .image-hover-container img {
+    display: block;
+    width: 100%;
+    transition: opacity 0.4s ease;
+  }
+  
+  .image-hover-container .hover-img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    z-index: 1;
+  }
+  
+  .image-hover-container .default-img {
+    position: relative;
+    z-index: 2;
+  }
+  
+  .image-hover-container:hover .hover-img {
+    opacity: 1;
+  }
+  
+  .image-hover-container:hover .default-img {
+    opacity: 0;
+  }
+  
 .text-center{
     
     margin-bottom: 20px;

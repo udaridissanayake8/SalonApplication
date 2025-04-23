@@ -165,7 +165,7 @@
         <img src="Images/contact 3.jpg" class="w-100" style="margin-top: -50px;" />
             <div  style="background-color: rgba(10, 10, 10, 0.589)">
               <div style="margin-top: -680px; ">
-              <h1 style="margin-left:120px; font-family: 'candara';color:#ed0b96;">BOOKING SUCCESSFUL!</h1>
+              <h1 style="margin-left:20px; font-family: 'candara';color:#ed0b96;">BOOKING SUCCESSFUL!</h1>
               <ul style="list-style-type: none;margin-top: 20px;font-size:20px;font-weight:bold;">
                 <li style=" font-family: 'candara';";>Thank you for booking with us!</li>
                 <li style=" font-family: 'candara';";>Your booking details are as follows:</li>
