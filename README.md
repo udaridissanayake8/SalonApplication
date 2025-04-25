@@ -43,8 +43,8 @@ Olivea Salon is a web-based platform that allows users to explore salon services
 3. Start XAMPP and ensure Apache and MySQL are running.
 4. Import the database:
     - Open phpMyAdmin.
-    - Create a new database (e.g., `olivea_salon`).
-    - Import the provided SQL file (`database/olivea_salon.sql`).
+    - Create a new database (e.g., `oliveadb`).
+    - Import the provided SQL file (`database/oliveadb.sql`).
 
 ## Usage
 
